@@ -1,0 +1,21 @@
+<div class="container">
+  <table class="table" *ngIf="productsItems">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>NAME</th>
+      <th>PRICE</th>
+      <th>QUANTITY</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let i of productsItems[0]">
+      <td>{{i.id}}</td>
+      <td>{{i.productName}}</td>
+      <td>{{i.price}}</td>
+      <td>{{i.quantity}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
